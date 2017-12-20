@@ -31,6 +31,7 @@ public class OlaPlayApp extends Application {
 
     private void initialize() {
         StethoUtils.install(this);
+        NetworkUtil.updateConnectivityStatus(this);
         LocalBroadcastManager.getInstance(this)
                 .registerReceiver(networkChangeReceiver, new IntentFilter(NetworkUtil.LOCAL_INTENT_FILTER));
         appLifeCycleHandler.checkInternet(this);

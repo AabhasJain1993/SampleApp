@@ -26,16 +26,9 @@ public class RouterActivity extends AppCompatActivity {
             if (NetworkUtil.isInternetConnected(false) ) {
     //			LocalBroadcastManager.getInstance(this).unregisterReceiver(networkChangeReceiver);
                 Intent intent = new Intent(this, SplashActivity.class);
-                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+              //  intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
                 startActivity(intent);
                 finish();
             }
-//        } else {
-//            Intent intent = new Intent(this, SplashActivity.class);
-//            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-//            startActivity(intent);
-//            finish();
-//
-//        }
     }
 }

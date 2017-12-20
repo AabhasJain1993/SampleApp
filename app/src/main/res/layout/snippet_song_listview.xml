@@ -10,6 +10,7 @@
         android:id="@+id/searchbar"
         android:layout_margin="20dp"
         android:hint="Search Songs..."
+        android:textColorHint="@color/white"
         android:paddingTop="10dp"
         android:paddingBottom="10dp" />
 
